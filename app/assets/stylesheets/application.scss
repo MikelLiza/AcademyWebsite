@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 $font: 'PT Sans', sans-serif;
 $color: #9E258A; //purple
 
