@@ -6,7 +6,7 @@ class ContactMailerTest < ActionMailer::TestCase
   # end
   test "should return contact email" do
     mail = ContactMailer.contact_email("test@me.com", "Tester", "1234567890", @message = "Yo")
-    assert_equal ['from@example.com'], mail.to
-    assert_equal ['from@example.com'], mail.from
+    assert_equal ['mike@email.com'], mail.to
+    assert_equal ['mike@email.com'], mail.from
   end
 end

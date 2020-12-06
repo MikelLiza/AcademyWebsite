@@ -54,12 +54,14 @@ body{
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 10rem;
+  height: 11rem;
   width: 100%;
+  padding: 0px;
   background-color: grey;
   color: white;
   direction: ltr;
   text-align: center;
+  line-height: 0.5;
 }
 .column {
   float: left;
