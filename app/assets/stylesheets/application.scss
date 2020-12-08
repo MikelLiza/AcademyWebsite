@@ -72,6 +72,27 @@ body{
   display: table;
   clear: both;
 }
+label.error {
+  color: #DA1B1B;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+input.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
+}
+label.error.fail-alert {
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 2px 0 6px 6px;
+  background: #ffe6eb;
+}
+input.valid.success-alert {
+  border: 2px solid #4CAF50;
+  color: green;
+}
 h1{
   margin: 5px;
   text-transform: uppercase;
