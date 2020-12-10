@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lectures
   get 'home/home'
   root 'home#home'
   get 'contact', to: 'home#contact'
