@@ -1,8 +1,8 @@
 class CreateLectures < ActiveRecord::Migration[5.2]
   def change
     create_table :lectures do |t|
-      t.string :title
-      t.float :weekly_hours
+      t.string :title, null: false
+      t.float :weekly_hours, null: false
       t.text :description
 
       t.timestamps
