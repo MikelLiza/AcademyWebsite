@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: Title 1
   weekly_hours: 1.5
   description: MyText
 
 two:
-  title: MyString
+  title: Title 2
   weekly_hours: 1.5
   description: MyText

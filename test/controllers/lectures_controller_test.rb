@@ -17,7 +17,7 @@ class LecturesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create lecture" do
     assert_difference('Lecture.count') do
-      post lectures_url, params: { lecture: { description: @lecture.description, title: @lecture.title, weekly_hours: @lecture.weekly_hours } }
+      post lectures_url, params: { lecture: { description: @lecture.description, title: @lecture.title + " create", weekly_hours: @lecture.weekly_hours + 1 } }
     end
 
     assert_redirected_to lecture_url(Lecture.last)

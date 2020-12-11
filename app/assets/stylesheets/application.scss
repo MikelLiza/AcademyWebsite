@@ -47,14 +47,29 @@ body{
   font-size: 25px;
   padding: 10px;
   margin: 0px;
-  color: black;
+  color: blue;
   direction: rtl;
+}
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: blue;
 }
 .footer{
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 11rem;
+  height: 12rem;
   width: 100%;
   padding: 0px;
   background-color: grey;
