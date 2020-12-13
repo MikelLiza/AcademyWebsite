@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_11_195357) do
+ActiveRecord::Schema.define(version: 2020_12_13_113649) do
 
   create_table "lectures", force: :cascade do |t|
     t.string "title", null: false
@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(version: 2020_12_11_195357) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "lastName"
+    t.date "dob"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
