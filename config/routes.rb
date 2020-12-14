@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :teachers
   devise_for :users
   resources :lectures
   get 'home/home'

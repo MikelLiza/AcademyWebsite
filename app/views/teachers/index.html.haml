@@ -1,0 +1,26 @@
+%h1 Listing teachers
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Last Name
+      %th Date of birth
+      %th Years teaching
+      %th Description
+      %th Email
+      %th
+      %th
+      %th
+
+  %tbody
+    - @teachers.each do |teacher|
+      %tr
+        %td= teacher.name
+        %td= teacher.lastName
+        %td= teacher.dob
+        %td= teacher.tchyears
+        %td= teacher.description
+        %td= teacher.email
+
+%br

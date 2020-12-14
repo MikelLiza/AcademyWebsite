@@ -18,9 +18,13 @@
 //= require turbolinks
 //= require_tree .
 
-function ValidateContactForm()
+function alertion()
 {
-  $("#contact_id").validate({
+  alert("hi");
+}
+function validateContactForm()
+{
+  $("#contactForm").validate({
     errorClass: "error fail-alert",
     validClass: "valid success-alert",
     rules: {
@@ -41,7 +45,7 @@ function ValidateContactForm()
       },
       message: 'required',
     },
-    messages : {
+    messages: {
       name: {
         minlength: "Name should be at least 3 characters"
       },
@@ -56,12 +60,44 @@ function ValidateContactForm()
         maxlength: "Number must be 12 numbers long at most",
         min: "Do not enter negative numbers"
       }
-    }
+    },
   });
 }
+
+function validateLectureForm()
+{
+  $("#lectureForm").validate({
+    errorClass: "errorFailAlert",
+    validClass: "valid success-alert",
+    rules: {
+      title: {
+        required: true,
+        minlength: 3
+      },
+      weekly_hours: {
+        required: true,
+        min: 0,
+        number: true,
+      }
+    },
+    messages: {
+      title: {
+        minlength: "Name should be at least 3 characters"
+      },
+      weekly_hours: {
+        min: "Do not enter negative numbers",
+        number: "please enter a number"
+      }
+  });
+}
+
 $(document).ready(function(){
-  if(document.getElementById('contact_id'))
+  if(document.getElementById('contactForm'))
   {
-    ValidateContactForm();
+    validateContactForm();
+  }
+  if(document.getElementById('lectureForm'))
+  {
+    validateLectureForm();
   }
 });

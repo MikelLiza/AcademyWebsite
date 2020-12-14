@@ -1,4 +1,4 @@
-= form_for @lecture do |f|
+= form_for @lecture, :html => {:id => "lectureForm"} do |f|
   - if @lecture.errors.any?
     #error_explanation
       %h2= "#{pluralize(@lecture.errors.count, "error")} prohibited this lecture from being saved:"

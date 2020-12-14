@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  lastName: MyString
+  dob: 2020-12-13
+  tchyears: 2
+  description: MyText
+  email: myemail1
+
+two:
+  name: MyString
+  lastName: MyString
+  dob: 2020-12-13
+  tchyears: 1
+  description: MyText
+  email: myemail2
